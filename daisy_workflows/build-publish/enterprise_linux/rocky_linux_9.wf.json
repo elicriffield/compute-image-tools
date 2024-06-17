@@ -2,7 +2,7 @@
   "Name": "rocky-linux-9",
   "Project": "guestos-dev",
   "Zone": "us-central1-c",
-  "GCSPath": "gs://gce-image-build-bucket/daisy/${USERNAME}",
+  "GCSPath": "gs://guestos-dev/daisy/${USERNAME}",
   "Vars": {
     "build_date": {
       "Value": "${TIMESTAMP}",
