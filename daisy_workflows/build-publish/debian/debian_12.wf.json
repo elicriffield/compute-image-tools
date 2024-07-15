@@ -1,7 +1,7 @@
 {
   "Name": "debian-12",
-  "Project": "gce-image-builder",
-  "Zone": "us-central1-b",
+  "Project": "guestos-dev",
+  "Zone": "us-central1-a",
   "GCSPath": "gs://gce-image-build-bucket/daisy/${USERNAME}",
   "Vars": {
     "build_date": {
