@@ -1,13 +1,13 @@
 {{/*
   Template to publish Debian images.
-  By default this template is setup to publish to the 'gce-image-builder'
+  By default this template is setup to publish to the 'guestos-dev'
   project, the 'environment' variable can be used to publish to 'test', 'prod'
   DeleteAfter is set to 180 days for all environments other than prod where n
   time period is set.
 */}}
 {
   "Name": "debian",
-  {{$work_project := printf "%q" "gce-image-builder" -}}
+  {{$work_project := printf "%q" "guestos-dev" -}}
   {{$endpoint := `"https://www.googleapis.com/compute/alpha/projects/"` -}}
   {{$delete_after := `"24h*30*6"` -}}
   {{if eq .environment "test" -}}
