@@ -15,6 +15,11 @@
   "PublishProject": "bct-prod-images",
   "ComputeEndpoint": {{$endpoint}},
   "DeleteAfter": {{$delete_after}},
+  {{- else if eq .environment "test-louhi-preprod" -}}
+  "WorkProject": {{$work_project}},
+  "Name": "rocky-linux-9L",
+  "PublishProject": "bct-prod-images",
+  "ComputeEndpoint": {{$endpoint}},
   {{- else if eq .environment "prod" -}}
   "WorkProject": {{$work_project}},
   "PublishProject": "rocky-linux-cloud",
